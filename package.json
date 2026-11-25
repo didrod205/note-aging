@@ -1,6 +1,6 @@
 {
   "name": "note-aging",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "See which Obsidian notes you haven't touched in a while.",
   "main": "main.js",
   "scripts": {
