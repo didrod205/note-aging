@@ -1,0 +1,20 @@
+{
+  "name": "note-aging",
+  "version": "0.1.0",
+  "description": "See which Obsidian notes you haven't touched in a while.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "test": "node esbuild.test.mjs && node --test test-dist/*.mjs"
+  },
+  "author": "E:LAB",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild-wasm": "^0.24.0",
+    "lucide": "^1.77.0",
+    "obsidian": "latest",
+    "tslib": "^2.6.0",
+    "typescript": "^5.6.0"
+  }
+}

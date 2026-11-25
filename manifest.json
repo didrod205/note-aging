@@ -1,0 +1,10 @@
+{
+  "id": "note-aging",
+  "name": "Note Aging",
+  "version": "0.1.0",
+  "minAppVersion": "1.7.2",
+  "description": "See which notes you haven't touched in a while. Fades old notes in the file explorer, lists them oldest first and lets you mark them as reviewed.",
+  "author": "E:LAB",
+  "authorUrl": "https://elab-studio.com",
+  "isDesktopOnly": false
+}
