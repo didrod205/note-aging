@@ -98,7 +98,7 @@ export default class NoteAgingPlugin extends Plugin {
 	// ---------- ages ----------
 
 	ageOf(file: TFile, now = Date.now()): NoteAge {
-		const fm = this.app.metadataCache.getFileCache(file)?.frontmatter as Record<string, unknown> | undefined;
+		const fm = this.app.metadataCache.getFileCache(file)?.frontmatter;
 		return computeAge(
 			{ path: file.path, mtime: file.stat.mtime, ctime: file.stat.ctime, propertyValue: fm?.[this.settings.property] },
 			this.settings,
@@ -511,7 +511,6 @@ class AgingSettingTab extends PluginSettingTab {
 				sl
 					.setLimits(1, 10, 1)
 					.setValue(s.randomWeight)
-					.setDynamicTooltip()
 					.onChange((v) => {
 						s.randomWeight = v;
 						save();
